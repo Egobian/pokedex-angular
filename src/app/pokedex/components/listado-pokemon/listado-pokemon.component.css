@@ -1,0 +1,17 @@
+.contenedor-lista {
+  position: absolute;
+  overflow: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.lista {
+  list-style-type: none;
+}
+
+.elemento-lista {
+  width: 8em;
+  height: 2em;
+  margin: 4px;
+  font-size: 1.2rem;
+}/*# sourceMappingURL=listado-pokemon.component.css.map */

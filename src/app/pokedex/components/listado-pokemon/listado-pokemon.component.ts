@@ -10,6 +10,7 @@ import { ApiService } from '../../services/api.service'
 export class ListadoPokemonComponent implements OnInit {
 
   listaPokemon: ListaPokemonResponse = {}
+  pokemonSeleccionado: string = ""
 
   constructor(private apiService: ApiService) { }
 
@@ -21,6 +22,11 @@ export class ListadoPokemonComponent implements OnInit {
     this.apiService.consultarListaPokemon().subscribe((response) =>
       this.listaPokemon = response
     )
+  }
+
+  seleccionarPokemon(nombre: string): void{
+    this.pokemonSeleccionado = nombre
+    console.log(this.pokemonSeleccionado)
   }
   
 }
