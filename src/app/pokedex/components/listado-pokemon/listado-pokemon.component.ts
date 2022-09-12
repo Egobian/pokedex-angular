@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ListaPokemonResponse } from '../../models/lista-pokemon.model'
+import { ApiService } from '../../services/api.service'
 
 @Component({
   selector: 'app-listado-pokemon',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListadoPokemonComponent implements OnInit {
 
-  constructor() { }
+  listaPokemon: ListaPokemonResponse = {}
+
+  constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
+    this.cargarListaPokemon()
   }
 
+  cargarListaPokemon(): void {
+    this.apiService.consultarListaPokemon().subscribe((response) =>
+      this.listaPokemon = response
+    )
+  }
+  
 }
