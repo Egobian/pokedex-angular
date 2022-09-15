@@ -1,1 +1,19 @@
-<p>detalle-pokemon works!</p>
+<section class="contenedor-detalle">
+  <div  *ngIf="this.apiService.detallePokemon.name != null">
+    <h1>
+      {{ this.apiService.detallePokemon.name | titlecase }}
+    </h1>
+
+    <img src="{{this.apiService.detallePokemon.sprites?.front_default}}" />
+    <img src="{{this.apiService.detallePokemon.sprites?.back_default}}" />
+
+    <p>Descripción: {{ this.apiService.descripcion }} </p>
+    <p>Tipos:
+      <span *ngFor="let type of this.apiService.detallePokemon.types">
+        {{type.type.name}}</span>
+    </p>
+
+    <p>Altura: {{this.apiService.detallePokemon.height}}</p>
+    <p>Peso: {{this.apiService.detallePokemon.weight}}</p>
+  </div>
+</section>

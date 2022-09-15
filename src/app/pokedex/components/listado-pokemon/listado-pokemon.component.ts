@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
+import { EspeciePokemonResponse } from '../../models/especie-pokemon.model'
 import { ListaPokemonResponse } from '../../models/lista-pokemon.model'
 import { ApiService } from '../../services/api.service'
 
@@ -24,9 +25,19 @@ export class ListadoPokemonComponent implements OnInit {
     )
   }
 
-  seleccionarPokemon(nombre: string): void{
-    this.pokemonSeleccionado = nombre
-    console.log(this.pokemonSeleccionado)
+  seleccionarPokemon(nombre: string): void {
+    this.apiService.consultarDetallePokemon(nombre).subscribe((response) =>
+      this.apiService.detallePokemon = response
+    )
+
+    this.apiService.consultarEspeciePokemon(nombre).subscribe((response) =>
+      this.asignarValores(response)
+    )
   }
-  
+
+  asignarValores(response: EspeciePokemonResponse): void {
+    this.apiService.especiePokemon = response
+    this.apiService.descripcion = this.apiService.especiePokemon.flavor_text_entries?.find(elemento => elemento.language.name == "es")?.flavor_text
+  }
+
 }

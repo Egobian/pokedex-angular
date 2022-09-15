@@ -1,6 +1,6 @@
 <div class="contenedor-lista">
-  <li class="lista" *ngFor="let pokemon of listaPokemon.results">
-    <button class="elemento-lista" type="button" (click)="seleccionarPokemon(pokemon.name)">
-      {{pokemon.name | titlecase }}</button>
-  </li>
+  <button *ngFor="let pokemon of listaPokemon.results" class="btn btn-light elemento-lista" type="button"
+    (click)="seleccionarPokemon(pokemon.name)">
+    {{pokemon.name | titlecase }}
+  </button>
 </div>
