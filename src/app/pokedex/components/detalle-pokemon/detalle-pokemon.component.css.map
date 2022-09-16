@@ -1,1 +1,9 @@
-{"version":3,"sources":["detalle-pokemon.component.scss","detalle-pokemon.component.css"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,mBAAA;EACA,qBAAA;EACA,kBAAA;EACA,YAAA;EACA,gBAAA;ACCF","file":"detalle-pokemon.component.css"}
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,mBAAmB,CAAA;EACjB,MAAM,EAAE,KAAK;EACb,WAAW,EAAE,MAAM;EACnB,aAAa,EAAE,MAAM;EACrB,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "detalle-pokemon.component.scss"
+    ],
+    "names": [],
+    "file": "detalle-pokemon.component.css"
+}
