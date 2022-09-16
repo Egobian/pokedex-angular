@@ -1,8 +1,11 @@
 .contenedor-detalle {
   height: 100vh;
-  align-items: center;
-  align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   text-align: center;
   margin: auto;
-  margin-top: 42px;
-}/*# sourceMappingURL=detalle-pokemon.component.css.map */
+}
+/*# sourceMappingURL=detalle-pokemon.component.css.map */
