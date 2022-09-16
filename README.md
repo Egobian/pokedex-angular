@@ -1,27 +1,53 @@
-# PokedexAngular
+# Pokedex Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
+Aplicación hecha con Angular para consultar los Pokemon de la primera generación y parte de sus detalles.
 
-## Development server
+Creado con la versión de [Angular CLI](https://github.com/angular/angular-cli) 14.0.1.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Prerrequisitos
 
-## Running unit tests
+Tener instalados los siguientes recursos:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- NodeJS: https://nodejs.org/es/
+- Angular CLI: https://angular.io/cli
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Instalación
+
+Clonar el repositorio y ejecutar el comando  `npm i` sobre la raise. Utilizar la instruccion `ng serve` para levantar el servidor, la url para acceder está configurada en: `http://localhost:4200/`.
+
+
+
+
+
+## Recursos utilizados
+
+Para consultar los datos se ha utilizado la API publica https://pokeapi.co/.
+
+También se ha importado la librería de bootstrap https://ng-bootstrap.github.io/.
+
+
+
+
+
+## Licencia
+
+Este es software libre y sin compromiso publicado en el dominio público.
+
+Cualquier persona es libre de copiar, modificar, publicar, usar, compilar, vender o distribuir este software, ya sea en forma de código fuente o como binario, para cualquier propósito, comercial o no comercial, y por cualquier medio.
+
+En las jurisdicciones que reconocen las leyes de derechos de autor, el autor o autores de este software dedican cualquier y todos los derechos de autor del software para el dominio público. Hacemos esta dedicación para el beneficio del público en general y en detrimento de nuestros herederos y sucesores. Pretendemos que esta dedicación sea un acto manifiesto de renuncia a perpetuidad de todos los derechos presentes y futuros de esta software bajo la ley de derechos de autor.
+
+EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O IMPLÍCITA, INCLUYENDO PERO NO LIMITADA A LAS GARANTÍAS DE COMERCIABILIDAD, APTITUD PARA UN PROPÓSITO PARTICULAR Y NO INCUMPLIMIENTO. EN NINGÚN CASO, LOS AUTORES SERÁN RESPONSABLES POR CUALQUIER RECLAMACIÓN, DAÑOS O OTRA RESPONSABILIDAD, YA SEA EN UNA ACCIÓN DE CONTRATO, TORT U OTRA MANERA, DERIVADO DE, FUERA DE O EN RELACIÓN CON EL SOFTWARE O EL USO O OTRAS REPARACIONES EN EL SOFTWARE.
+
+Para más información, consulte http://unlicense.org/
+
+
+
